@@ -21,7 +21,7 @@
             :size="150"
             color="grey lighten-4"
           >
-            <img src="http://localhost:8080/avatar.jpg" alt="avatar">
+            <img src="https://5ca3dc3e5bd3a8869e5389b0--clever-swanson-b7c535.netlify.com/avatar.jpg" alt="avatar">
           </v-avatar>
         </div>
         <v-list class="pt-0">
@@ -50,7 +50,7 @@
     </v-toolbar>
     <v-parallax
       class="elevation-5" 
-      src="http://localhost:8080/parallax.jpg"
+      src="https://5ca3dc3e5bd3a8869e5389b0--clever-swanson-b7c535.netlify.com/parallax.jpg"
     >
       <v-layout align-end justify-end column fill-height pa-0>
         <div class="text-xs-right pa-5" align-end>
