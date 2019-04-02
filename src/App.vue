@@ -18,10 +18,10 @@
         <div class="pa-3">
           <p class="display-1"> Raphaëlle Roy </p>
           <v-avatar
-            :size="128"
+            :size="150"
             color="grey lighten-4"
           >
-            <img src="https://vuetifyjs.com/apple-touch-icon-180x180.png" alt="avatar">
+            <img src="http://localhost:8080/avatar.jpg" alt="avatar">
           </v-avatar>
         </div>
         <v-list class="pt-0">
