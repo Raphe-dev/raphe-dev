@@ -4,10 +4,11 @@
       v-model="primaryDrawer.model"
       :clipped="true"
       floating
-      :mobile-break-point="599"
+      :mobile-break-point="900"
       overflow
       app
       class="elevation-3"
+      style="background-color:#181818"
     >
     <v-flex
         align-center
@@ -15,9 +16,9 @@
         text-xs-center
       >
         <div class="pa-3">
-          <p class="display-1"> Lorem Ipsum </p>
+          <p class="display-1"> Raphaëlle Roy </p>
           <v-avatar
-            :size="100"
+            :size="128"
             color="grey lighten-4"
           >
             <img src="https://vuetifyjs.com/apple-touch-icon-180x180.png" alt="avatar">
@@ -41,33 +42,34 @@
       </v-flex>
     </v-navigation-drawer>
 
-    <v-toolbar app v-if="$vuetify.breakpoint.xsOnly" >
+    <v-toolbar app v-if="$vuetify.breakpoint.smAndDown" >
       <v-toolbar-side-icon
         @click.stop="primaryDrawer.model = !primaryDrawer.model"
       ></v-toolbar-side-icon>
       <v-toolbar-title>Lorem Ipsum</v-toolbar-title>
     </v-toolbar>
-
+    <v-parallax
+      class="elevation-5" 
+      src="http://localhost:8080/parallax.jpg"
+    >
+      <v-layout align-end justify-end column fill-height pa-0>
+        <div class="text-xs-right pa-5" align-end>
+          <v-flex>
+            <div class="text-uppercase display-2" :class="{'display-2' : $vuetify.breakpoint.smAndDown}">Raphaelle Roy</div>
+            <h1 class="black--text text-uppercase font-weight-regular display-3" :class="{'display-3' :$vuetify.breakpoint.smAndDown}">Full-stack Developer</h1>
+          </v-flex>
+        </div>
+      </v-layout>
+    </v-parallax>
     <v-content>
-      <v-container fluid style="padding:0 !important;">
         <v-flex>
-          <div class="bg-container">
-            <v-layout align-end justify-end column fill-height pa-0>
-            <div class="text-xs-right pa-5" :class="{'pa-2' : $vuetify.breakpoint.smAndDown}" style="min-height:85vh" align-end>
-              <div style="height:27vh"/>
-              <v-flex>
-                <div class="text-uppercase display-3" :class="{'display-2' : $vuetify.breakpoint.smAndDown}">Lorem Ipsum</div>
-                <h1 class="black--text text-uppercase font-weight-regular display-4" :class="{'display-3' :$vuetify.breakpoint.smAndDown}">Full-stack Developer</h1>
-              </v-flex>
-            </div>
-            </v-layout>
-          </div>
+         
           <v-container fluid>
             <v-layout row wrap align-content-space-between>
                <v-flex md7 xs12>
                   <v-flex
                     text-sm-left >
-                    <h1> Lorem Ipsum Dolar? </h1>
+                    <h1> Who am I? </h1>
                     <p>
                       Cras eu efficitur lorem, non ullamcorper ligula. Aliquam erat volutpat. In hac habitasse platea dictumst. Sed neque quam, rutrum non consequat at, vulputate vitae augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut nec augue interdum, rutrum nulla bibendum, ullamcorper ligula. 
                     </p>
@@ -82,7 +84,7 @@
                   </v-flex>
                   <v-flex xs6>
                     <p class="text--secondary  text-sm-left"> Canada </p>
-                    <p class="text--secondary  text-sm-left"> loerm@ipsum.com </p>
+                    <p class="text--secondary  text-sm-left"> admin@raphe.dev </p>
                     <p class="text--secondary  text-sm-left"> (418) 933 2699 </p>
                   </v-flex>
                 </v-layout>
@@ -90,13 +92,12 @@
           </v-container>
           
         </v-flex>
-      </v-container>
       <v-container fluid>
         <v-layout row wrap align-content-space-between>
             <v-flex md7 xs12>
               <v-flex
                 text-sm-left >
-                <h1> Ipsum Dolar Amet? </h1>
+                <h1> What can I do for you? </h1>
                 <p>
                   Cras eu efficitur lorem, non ullamcorper ligula. Aliquam erat volutpat. In hac habitasse platea dictumst. Sed neque quam, rutrum non consequat at, vulputate vitae augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut nec augue interdum, rutrum nulla bibendum, ullamcorper ligula. 
                 </p>
@@ -104,8 +105,9 @@
             </v-flex>
         </v-layout>
       </v-container>
+      
       <v-container >
-        <h1> Ipsum Dolar Amet </h1>
+        <h1> What I've done </h1>
       <v-timeline>
         <v-timeline-item
           v-for="(year, i) in years"
@@ -156,8 +158,12 @@
       },
       years: [
         {
-          color: 'cyan',
+          color: 'blue',
           year: '2019'
+        },
+        {
+          color: 'light-blue',
+          year: '2017'
         },
         {
           color: 'cyan',
@@ -180,7 +186,7 @@
           year: '1993'
         }
       ]
-    })
+    }),
   }
 </script>
 
