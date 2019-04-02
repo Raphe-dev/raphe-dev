@@ -55,8 +55,7 @@
       <v-layout align-end justify-end column fill-height pa-0>
         <div class="text-xs-right pa-5" align-end>
           <v-flex>
-            <div class="text-uppercase display-2" :class="{'display-2' : $vuetify.breakpoint.smAndDown}">Raphaelle Roy</div>
-            <h1 class="black--text text-uppercase font-weight-regular display-3" :class="{'display-3' :$vuetify.breakpoint.smAndDown}">Full-stack Developer</h1>
+            <h1 class="black--text  font-weight-regular display-3" :class="{'display-3' :$vuetify.breakpoint.smAndDown}">Full-stack Developer</h1>
           </v-flex>
         </div>
       </v-layout>
@@ -70,7 +69,7 @@
                   <v-flex
                     text-sm-left >
                     <h1> Who am I? </h1>
-                    <p>
+                    <p class="text--secondary">
                       Cras eu efficitur lorem, non ullamcorper ligula. Aliquam erat volutpat. In hac habitasse platea dictumst. Sed neque quam, rutrum non consequat at, vulputate vitae augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut nec augue interdum, rutrum nulla bibendum, ullamcorper ligula. 
                     </p>
                   </v-flex>
@@ -98,7 +97,7 @@
               <v-flex
                 text-sm-left >
                 <h1> What can I do for you? </h1>
-                <p>
+                <p class="text--secondary">
                   Cras eu efficitur lorem, non ullamcorper ligula. Aliquam erat volutpat. In hac habitasse platea dictumst. Sed neque quam, rutrum non consequat at, vulputate vitae augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut nec augue interdum, rutrum nulla bibendum, ullamcorper ligula. 
                 </p>
               </v-flex>
@@ -123,7 +122,7 @@
           </template>
           <div class="py-3">
             <h2 :class="`headline font-weight-light mb-3 ${year.color}--text`">Lorem ipsum</h2>
-            <div>
+            <div class="text--secondary"> 
               Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
             </div>
           </div>
@@ -158,7 +157,7 @@
       },
       years: [
         {
-          color: 'blue',
+          color: 'indigo',
           year: '2019'
         },
         {
@@ -189,42 +188,3 @@
     }),
   }
 </script>
-
-
-<style lang="scss">
-.bg-container {
-  height: 97vh;
-  background: linear-gradient(129deg,  #22829b, #21955a);
-  background-size: 800% 800%;
-
-  background: linear-gradient(321deg, #22829b, #21955a);
-background-size: 800% 800%;
-
--webkit-animation: AnimationName 15s ease infinite;
--moz-animation: AnimationName 155s ease infinite;
--o-animation: AnimationName 15s ease infinite;
-animation: AnimationName 15s ease infinite;
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:11% 0%}
-    50%{background-position:90% 100%}
-    100%{background-position:11% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:11% 0%}
-    50%{background-position:90% 100%}
-    100%{background-position:11% 0%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:11% 0%}
-    50%{background-position:90% 100%}
-    100%{background-position:11% 0%}
-}
-@keyframes AnimationName { 
-    0%{background-position:11% 0%}
-    50%{background-position:90% 100%}
-    100%{background-position:11% 0%}
-}
-}
-
-</style>
