@@ -1,7 +1,7 @@
 <template>
   <v-parallax
     class="elevation-5" 
-    src="http://localhost:8080/parallax.jpg"
+    :src="imgurl"
   >
     <v-layout align-end justify-end column fill-height pa-0>
       <div class="text-xs-right pa-5" align-end>
@@ -18,7 +18,7 @@
   export default {
     name: 'parallax',
     data: () => ({
-      
+      imgurl:  process.env.VUE_APP_URL + '/parallax.jpg'
     })
   }
 </script>
