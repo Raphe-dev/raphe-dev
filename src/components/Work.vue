@@ -43,6 +43,14 @@
             <img src="http://bloc.solutions/images/FbLogo.png" style="max-width:40rem; max-height:37rem;">
             </img>
           </div>
+          <div v-if="$vuetify.breakpoint.mdOnly">
+            <img src="http://bloc.solutions/images/FbLogo.png" style="max-width:20rem;">
+            </img>
+          </div>
+          <div v-if="$vuetify.breakpoint.smOnly">
+            <img src="http://bloc.solutions/images/FbLogo.png" style="max-width:15rem;">
+            </img>
+          </div>
         </v-flex>
       </v-carousel-item>
 
