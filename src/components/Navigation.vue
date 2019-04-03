@@ -20,7 +20,7 @@
             :size="150"
             color="grey lighten-4"
           >
-            <img src="http://localhost:8080/avatar.jpg" alt="avatar">
+            <img :src="imgurl" alt="avatar">
           </v-avatar>
         </div>
         <v-list class="pt-0">
@@ -73,6 +73,7 @@
         floating: false,
         mini: false
       },
+      imgurl:  process.env.VUE_APP_URL + '/avatar.jpg'
     })
   }
 </script>
