@@ -42,6 +42,7 @@
           <a href="https://www.facebook.com/profile.php?id=100009165258440" target="_blank" style="text-decoration:none;"> <v-icon class="fbicon" medium>mdi-facebook-box</v-icon> </a>
           <a href="https://www.linkedin.com/in/rapha%C3%ABlle-roy-b3b89a158/" target="_blank" style="text-decoration:none;"> <v-icon class="linkedinicon" medium>mdi-linkedin-box</v-icon> </a>
           <a href="mailto:raph0713@gmail.com" style="text-decoration:none;"> <v-icon class="mailicon" medium>mdi-gmail</v-icon> </a>
+          <a href="https://github.com/Raphe-dev" target="_blank" style="text-decoration:none;"> <v-icon medium>mdi-github-circle</v-icon> </a>
         </div>
       </v-flex>
     </v-navigation-drawer>
