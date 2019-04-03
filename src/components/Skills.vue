@@ -4,8 +4,8 @@
             <v-flex>
               <h1> Skills </h1>
               </br>
-              <v-layout style="display:flex; flex-direction:row; justify-content:space-around; flex-wrap:wrap;">
-                <v-card elevation-1>
+              <v-layout style="display:flex; flex-direction:row; justify-content:space-between; flex-wrap:wrap;">
+                <v-card elevation-1 style="margin:1rem;">
                   <div style="padding:1rem;">
                   <h3 class="headline text-sm-center"> Front-end </h3>
                   </br>
@@ -40,7 +40,7 @@
                   </div>
                 </v-card>
 
-                <v-card elevation-1>
+                <v-card elevation-1 style="margin:1rem;">
                   <div style="padding:1rem;">
                   <h3 class="headline text-sm-center"> Back-end </h3>
                   </br>
@@ -74,7 +74,7 @@
                   </div>
                 </v-card>
 
-                <v-card elevation-1>
+                <v-card elevation-1 style="margin:1rem;">
                   <div style="padding:1rem;">
                   <h3 class="headline text-sm-center"> Hobby </h3>
                   </br>

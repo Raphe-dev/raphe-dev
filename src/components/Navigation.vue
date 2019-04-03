@@ -39,9 +39,9 @@
           </v-list-tile>
         </v-list>
         <div style="width:100%; display:flex; justify-content:space-around; position:absolute; bottom:2rem;">
-          <v-icon medium>mdi-facebook-box</v-icon>
-          <v-icon medium>mdi-linkedin-box</v-icon>
-          <v-icon medium>mdi-email</v-icon>
+          <a href="https://www.facebook.com/profile.php?id=100009165258440" target="_blank" style="text-decoration:none;"> <v-icon class="fbicon" medium>mdi-facebook-box</v-icon> </a>
+          <a href="https://www.linkedin.com/in/rapha%C3%ABlle-roy-b3b89a158/" target="_blank" style="text-decoration:none;"> <v-icon class="linkedinicon" medium>mdi-linkedin-box</v-icon> </a>
+          <a href="mailto:raph0713@gmail.com" style="text-decoration:none;"> <v-icon class="mailicon" medium>mdi-gmail</v-icon> </a>
         </div>
       </v-flex>
     </v-navigation-drawer>
@@ -61,7 +61,9 @@
     data: () => ({
             items: [
           { title: 'Home', icon: 'dashboard', target: 0 },
-          { title: 'About', icon: 'question_answer', target: 500 }
+          { title: 'About', icon: 'question_answer', target: 500 },
+          { title: 'Skills', icon: 'mdi-star', target: 850 },
+          { title: 'Journey', icon: 'mdi-run', target: 1775 },
         ],
       drawers: ['Default (no property)', 'Permanent', 'Temporary'],
       primaryDrawer: {
@@ -74,3 +76,24 @@
     })
   }
 </script>
+
+<style lang="scss">
+  .fbicon {
+    &:hover {
+      color:#3C5A99;
+      cursor: pointer;
+    }
+  }
+  .linkedinicon {
+    &:hover {
+      color:#0077B5;
+      cursor: pointer;
+    }
+  }
+  .mailicon {
+    &:hover {
+      color:#D44638;
+      cursor: pointer;
+    }
+  }
+</style>

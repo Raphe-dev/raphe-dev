@@ -13,7 +13,7 @@
 
             <p>
               <h2> Project details </h2>
-              <div class="text--secondary" style="padding-right:7rem; padding-left:0.5rem; text-align:justify;"> In ac felis quis tortor malesuada pretium. Phasellus dolor. Fusce fermentum odio nec arcu. Integer tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ac felis quis tortor malesuada pretium. Phasellus dolor. Fusce fermentum odio nec arcu. Integer tincidunt. </div>
+              <div class="text--secondary" style="padding-right:7rem; padding-left:0.5rem; text-align:justify;"> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ac felis quis tortor malesuada pretium. Phasellus dolor. Fusce fermentum odio nec arcu. Integer tincidunt. </div>
             </p>
 
             <p> 
