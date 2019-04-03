@@ -6,7 +6,7 @@
         v-for="(year, i) in years"
         :key="i"
         :color="year.color"
-        small
+        :icon="year.icon"
       >
         <template v-slot:opposite>
           <span
@@ -32,31 +32,38 @@
       years: [
         {
           color: 'indigo',
-          year: '2019'
+          year: '2019',
+          icon: 'mdi-cat'
         },
         {
           color: 'light-blue',
-          year: '2017'
+          year: '2017',
+          icon: 'mdi-language-html5'
         },
         {
           color: 'cyan',
-          year: '2016'
+          year: '2016',
+          icon: 'mdi-chart-line'
         },
         {
           color: 'green',
-          year: '2008'
+          year: '2008',
+          icon: 'mdi-star'
         },
         {
           color: 'pink',
-          year: '2005'
+          year: '2005',
+          icon: 'mdi-glasses'
         },
         {
           color: 'amber',
-          year: '1996'
+          year: '1996',
+          icon: 'mdi-monitor'
         },
         {
           color: 'orange',
-          year: '1993'
+          year: '1993 ',
+          icon: 'mdi-baby'
         }
       ]
     })
