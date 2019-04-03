@@ -60,12 +60,12 @@
   export default {
     name: 'navigation',
     data: () => ({
-            items: [
-          { title: 'Home', icon: 'dashboard', target: 0 },
-          { title: 'About', icon: 'question_answer', target: 500 },
-          { title: 'Skills', icon: 'mdi-star', target: 850 },
-          { title: 'Journey', icon: 'mdi-run', target: 1775 },
-        ],
+      items: [
+        { title: 'Home', icon: 'dashboard', target: 0 },
+        { title: 'About', icon: 'question_answer', target: 500 },
+        { title: 'Skills', icon: 'mdi-star', target: 850 },
+        { title: 'Journey', icon: 'mdi-routes', target: 1775 },
+      ],
       drawers: ['Default (no property)', 'Permanent', 'Temporary'],
       primaryDrawer: {
         model: null,
@@ -75,7 +75,8 @@
         mini: false
       },
       imgurl:  process.env.VUE_APP_URL + '/avatar.jpg'
-    })
+    }),
+    
   }
 </script>
 

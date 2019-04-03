@@ -31,16 +31,16 @@
     data: () => ({
       years: [
         {
-          color: 'indigo',
+          color: 'blue',
           year: '2019',
-          icon: 'mdi-cat',
+          icon: 'mdi-map-marker',
           title: 'Now we\'re here'
         },
         {
           color: 'light-blue',
           year: '2017',
-          icon: 'mdi-language-html5',
-          title: 'I fall in love with Vue'
+          icon: 'mdi-heart-outline',
+          title: 'Discovery of Vue'
         },
         {
           color: 'cyan',
@@ -58,7 +58,7 @@
           color: 'pink',
           year: '2005',
           icon: 'mdi-glasses',
-          title: 'Discovered programming'
+          title: 'Discovery of programming'
         },
         {
           color: 'amber',
