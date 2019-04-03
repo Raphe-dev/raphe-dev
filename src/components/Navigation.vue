@@ -27,7 +27,7 @@
           <v-list-tile
             v-for="item in items"
             :key="item.title"
-            @click=""
+            @click="$vuetify.goTo(item.target)"
           >
             <v-list-tile-action>
               <v-icon>{{ item.icon }}</v-icon>
@@ -60,8 +60,8 @@
     name: 'navigation',
     data: () => ({
             items: [
-          { title: 'Home', icon: 'dashboard' },
-          { title: 'About', icon: 'question_answer' }
+          { title: 'Home', icon: 'dashboard', target: 0 },
+          { title: 'About', icon: 'question_answer', target: 500 }
         ],
       drawers: ['Default (no property)', 'Permanent', 'Temporary'],
       primaryDrawer: {
