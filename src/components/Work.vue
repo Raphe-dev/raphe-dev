@@ -18,20 +18,20 @@
 
             <p> 
               <h2> Project info </h2>
-              <div style="padding-top:1rem; display:flex; flex-direction:column; align-content:flex-start">
-                <span style="display:flex; flex-direction:row; width:50%;">
+              <div class="p-info">
+                <span class="p-info__row" :class="{ '-small' : $vuetify.breakpoint.mdAndUp }">
                   <v-icon medium style="flex:1;">mdi-calendar</v-icon>
                   <h4 style="flex:2; line-height:2rem;"> Project Dates </h4>
                   <span style="flex:2; line-height:2rem;" class="text--secondary"> 2016, 2019 </span>
                 </span>
 
-                <span style="display:flex; flex-direction:row; width:50%; padding-top:1rem;">
+                <span class="p-info__row" :class="{ '-small' : $vuetify.breakpoint.mdAndUp }">
                   <v-icon style="flex:1;" medium>mdi-web</v-icon>
                   <h4 style="flex:2; line-height:2rem;"> Project Website </h4>
                   <span  style="flex:2; line-height:2rem;" class="text--secondary"> <a href="https://bloc.solutions" target="_blank" class="text--secondary"> bloc.solutions</a> </span>
                 </span>
 
-                 <span style="display:flex; flex-direction:row; width:50%; padding-top:1rem;">
+                 <span class="p-info__row" :class="{ '-small' : $vuetify.breakpoint.mdAndUp }">
                   <v-icon style="flex:1;" medium>mdi-settings</v-icon>
                   <h4 style="flex:2; line-height:2rem;"> Project Stack </h4>
                   <span style="flex:2; line-height:2rem;" class="text--secondary"> Laravel, Vue, Nuxt </span>
@@ -43,14 +43,7 @@
             <img src="http://bloc.solutions/images/FbLogo.png" style="max-width:40rem; max-height:37rem;">
             </img>
           </div>
-          <div v-if="$vuetify.breakpoint.mdOnly">
-            <img src="http://bloc.solutions/images/FbLogo.png" style="max-width:20rem;">
-            </img>
-          </div>
-          <div v-if="$vuetify.breakpoint.smOnly">
-            <img src="http://bloc.solutions/images/FbLogo.png" style="max-width:15rem;">
-            </img>
-          </div>
+
         </v-flex>
       </v-carousel-item>
 
@@ -70,19 +63,19 @@
             <p> 
               <h2> Project info </h2>
               <div style="padding-top:1rem; display:flex; flex-direction:column; align-content:flex-start">
-                <span style="display:flex; flex-direction:row; width:50%;">
+                <span style="display:flex; flex-direction:row; ">
                   <v-icon medium style="flex:1;">mdi-calendar</v-icon>
                   <h4 style="flex:2; line-height:2rem;"> Project Dates </h4>
                   <span style="flex:2; line-height:2rem;" class="text--secondary"> 2018, 2019 </span>
                 </span>
 
-                <span style="display:flex; flex-direction:row; width:50%; padding-top:1rem;">
+                <span style="display:flex; flex-direction:row; padding-top:1rem;">
                   <v-icon style="flex:1;" medium>mdi-web</v-icon>
                   <h4 style="flex:2; line-height:2rem;"> Project Website </h4>
                   <span  style="flex:2; line-height:2rem;" class="text--secondary"> <a href="" target="_blank" class="text--secondary"> link </a> </span>
                 </span>
 
-                 <span style="display:flex; flex-direction:row; width:50%; padding-top:1rem;">
+                 <span style="display:flex; flex-direction:row; padding-top:1rem;">
                   <v-icon style="flex:1;" medium>mdi-settings</v-icon>
                   <h4 style="flex:2; line-height:2rem;"> Project Stack </h4>
                   <span style="flex:2; line-height:2rem;" class="text--secondary"> Vue, Express </span>
@@ -119,3 +112,25 @@
     })
   }
 </script>
+
+<style lang="scss">
+.p-info {
+  padding-top:1rem; 
+  display:flex; 
+  flex-direction:column; 
+  align-content:flex-start;
+
+  &__row {
+    display:flex; 
+    flex-direction:row;
+  
+  &.-small {
+    width:75%;
+  }
+
+    & + & {
+      padding-top:1rem;
+    }
+  }
+}
+</style>

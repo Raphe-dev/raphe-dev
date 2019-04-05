@@ -20,21 +20,21 @@
                         style="height:2.65rem"
                         small 
                         readonly 
-                        value="4"
+                        :value="4"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                       <v-rating 
                         style="height:2.65rem"
                         readonly 
                         small 
-                        value="5"
+                        :value="5"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                       <v-rating 
                         style="height:2.65rem"
                         small 
                         readonly 
-                        value="3"
+                        :value="3"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                     </v-flex>
@@ -57,21 +57,21 @@
                         style="height:2.65rem"
                         small 
                         readonly 
-                        value="3"
+                        :value="3"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                       <v-rating 
                         style="height:2.65rem"
                         small
                         readonly 
-                        value="3"
+                        :value="3"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                       <v-rating 
                         style="height:2.65rem"
                         small
                         readonly 
-                        value="2"
+                        :value="2"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                     </v-flex>
@@ -94,21 +94,21 @@
                         style="height:2.65rem"
                         small 
                         readonly 
-                        value="2"
+                        :value="2"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                       <v-rating 
                         style="height:2.65rem"
                         readonly 
                         small 
-                        value="3"
+                        :value="3"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                       <v-rating 
                         style="height:2.65rem"
                         small 
                         readonly 
-                        value="1"
+                        :value="1"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                     </v-flex>

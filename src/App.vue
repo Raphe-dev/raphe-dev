@@ -5,15 +5,15 @@
     <parallax/>
 
     <v-content>
-      <me/>
+      <me id="me"/>
 
-      <can-do/>
+      <can-do id="cando"/>
 
       <skills/>
 
       <work/>
       
-      <journey/>
+      <journey id="journey"/>
     </v-content>
 
     <v-footer inset app absolute>

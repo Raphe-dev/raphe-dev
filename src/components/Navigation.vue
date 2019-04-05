@@ -25,7 +25,7 @@
         </div>
         <v-list class="pt-0">
           <v-list-tile
-            v-for="item in items"
+            v-for="item in items()"
             :key="item.title"
             @click="$vuetify.goTo(item.target)"
           >
@@ -60,12 +60,6 @@
   export default {
     name: 'navigation',
     data: () => ({
-      items: [
-        { title: 'Home', icon: 'dashboard', target: 0 },
-        { title: 'About', icon: 'question_answer', target: 500 },
-        { title: 'Skills', icon: 'mdi-star', target: 850 },
-        { title: 'Journey', icon: 'mdi-routes', target: 1775 },
-      ],
       drawers: ['Default (no property)', 'Permanent', 'Temporary'],
       primaryDrawer: {
         model: null,
@@ -76,7 +70,16 @@
       },
       imgurl:  process.env.VUE_APP_URL + '/avatar.jpg'
     }),
-    
+    methods: {
+      items() {
+        return [
+          { title: 'Home', icon: 'dashboard', target: 0 },
+          { title: 'About', icon: 'question_answer', target: document.getElementById('me') },
+          { title: 'Skills', icon: 'mdi-star', target: document.getElementById('cando') },
+          { title: 'Journey', icon: 'mdi-routes', target: document.getElementById('journey') },
+        ]
+      } 
+    }  
   }
 </script>
 
