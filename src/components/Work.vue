@@ -127,7 +127,6 @@
   &.-small {
     width:75%;
   }
-
     & + & {
       padding-top:1rem;
     }

@@ -4,23 +4,25 @@
             <v-flex>
               <h1> Skills </h1>
               </br>
-              <v-layout style="display:flex; flex-direction:row; justify-content:space-between; flex-wrap:wrap;">
-                <v-card elevation-1 style="margin:1rem;">
+              <v-layout style="display:flex; flex-direction:row; justify-content:space-around; flex-wrap:wrap;">
+                <v-card elevation-1 style="margin:1rem; flex-grow:1;">
                   <div style="padding:1rem;">
                   <h3 class="headline text-sm-center"> Front-end </h3>
                   </br>
-                  <v-layout xs12 md6 row style="width:20rem">
-                    <v-flex xs4>
-                      <p class="text--secondary text-uppercase text-sm-left" style="margin-top:0.4rem;"> Javascript </p>
-                      <p class="text--secondary text-uppercase text-sm-left"> Vue </p>
-                      <p class="text--secondary text-uppercase text-sm-left"> Css </p>
+                  <v-layout xs12 md6 row >
+                    <v-flex xs4 >
+                      <p class="text--secondary text-uppercase " style="margin-top:0.4rem;"> Javascript </p>
+                      <p class="text--secondary text-uppercase "> Node.js </p>
+                      <p class="text--secondary text-uppercase "> Vue </p>
+                      <p class="text--secondary text-uppercase "> CSS / SASS </p>
                     </v-flex>
-                    <v-flex xs8 style="justify-content:space-around;">
+                    <v-flex xs8 style="justify-content:space-between;">
                       <v-rating
                         style="height:2.65rem"
                         small 
                         readonly 
-                        :value="4"
+                        :value="5"
+                        :length="6"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                       <v-rating 
@@ -28,13 +30,23 @@
                         readonly 
                         small 
                         :value="5"
+                        :length="6"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                       <v-rating 
                         style="height:2.65rem"
                         small 
                         readonly 
-                        :value="3"
+                        :value="6"
+                        :length="6"
+                        full-icon="mdi-checkbox-blank-circle"
+                        empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
+                        <v-rating 
+                        style="height:2.65rem"
+                        small 
+                        readonly 
+                        :value="4"
+                        :length="6"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                     </v-flex>
@@ -42,22 +54,32 @@
                   </div>
                 </v-card>
 
-                <v-card elevation-1 style="margin:1rem;">
+                <v-card elevation-1 style="margin:1rem; flex-grow:1;">
                   <div style="padding:1rem;">
                   <h3 class="headline text-sm-center"> Back-end </h3>
                   </br>
-                  <v-layout xs12 md6 row style="width:20rem">
-                    <v-flex xs4>
-                      <p class="text--secondary text-uppercase text-sm-left" style="margin-top:0.4rem;"> Laravel </p>
-                      <p class="text--secondary text-uppercase text-sm-left"> Express </p>
-                      <p class="text--secondary text-uppercase text-sm-left"> Databases </p>
+                  <v-layout xs12 md6 row >
+                    <v-flex xs4 >
+                      <p class="text--secondary text-uppercase text-sm-left" style="margin-top:0.4rem;"> Node.js </p>
+                      <p class="text--secondary text-uppercase text-sm-left"> Firebase </p>
+                      <p class="text--secondary text-uppercase text-sm-left"> PHP </p>
+                      <p class="text--secondary text-uppercase text-sm-left"> SQL </p>
                     </v-flex>
                     <v-flex xs8 style="justify-content:space-around;">
                       <v-rating
                         style="height:2.65rem"
                         small 
                         readonly 
-                        :value="3"
+                        :value="4"
+                        :length="6"
+                        full-icon="mdi-checkbox-blank-circle"
+                        empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
+                      <v-rating 
+                        style="height:2.65rem"
+                        small
+                        readonly 
+                        :value="4"
+                        :length="6"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                       <v-rating 
@@ -65,13 +87,15 @@
                         small
                         readonly 
                         :value="3"
+                        :length="6"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                       <v-rating 
                         style="height:2.65rem"
                         small
                         readonly 
-                        :value="2"
+                        :value="3"
+                        :length="6"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                     </v-flex>
@@ -79,14 +103,15 @@
                   </div>
                 </v-card>
 
-                <v-card elevation-1 style="margin:1rem;">
+                <v-card elevation-1 style="margin:1rem; flex-grow:1;">
                   <div style="padding:1rem;">
                   <h3 class="headline text-sm-center"> Hobby </h3>
                   </br>
-                  <v-layout xs12 md6 row style="width:20rem">
-                    <v-flex xs4>
-                      <p class="text--secondary text-uppercase text-sm-left" style="margin-top:0.4rem;"> Game </p>
-                      <p class="text--secondary text-uppercase text-sm-left"> Mobile </p>
+                  <v-layout xs12 md6 row >
+                    <v-flex xs4 >
+                      <p class="text--secondary text-uppercase text-sm-left" style="margin-top:0.4rem;"> SEO </p>
+                      <p class="text--secondary text-uppercase text-sm-left"> Mobile dev </p>
+                      <p class="text--secondary text-uppercase text-sm-left"> Game dev </p>
                       <p class="text--secondary text-uppercase text-sm-left"> Blockchain </p>
                     </v-flex>
                     <v-flex xs8 style="justify-content:space-around;">
@@ -94,7 +119,8 @@
                         style="height:2.65rem"
                         small 
                         readonly 
-                        :value="2"
+                        :value="5"
+                        :length="6"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                       <v-rating 
@@ -102,6 +128,15 @@
                         readonly 
                         small 
                         :value="3"
+                        :length="6"
+                        full-icon="mdi-checkbox-blank-circle"
+                        empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
+                      <v-rating 
+                        style="height:2.65rem"
+                        small 
+                        readonly 
+                        :value="2"
+                        :length="6"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                       <v-rating 
@@ -109,6 +144,7 @@
                         small 
                         readonly 
                         :value="1"
+                        :length="6"
                         full-icon="mdi-checkbox-blank-circle"
                         empty-icon="mdi-checkbox-blank-circle-outline"></v-rating>
                     </v-flex>
