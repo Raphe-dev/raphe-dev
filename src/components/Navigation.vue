@@ -51,7 +51,7 @@
       <v-toolbar-side-icon
         @click.stop="primaryDrawer.model = !primaryDrawer.model"
       ></v-toolbar-side-icon>
-      <v-toolbar-title>Lorem Ipsum</v-toolbar-title>
+      <v-toolbar-title>Raphaëlle Roy</v-toolbar-title>
     </v-toolbar>
   </section>
 </template>

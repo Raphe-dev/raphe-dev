@@ -14,7 +14,7 @@
             <p>
               <h2> Project details </h2>
               <div class="text--secondary" style="padding-left:0.5rem; text-align:justify;" :style="{paddingRight : $vuetify.breakpoint.mdAndUp ? '7rem' : '0.5rem' }"> 
-                I co-founded the project in 2016 and left in April 2019. At first I was doing most of the backend, then ended up leading the front-end after a year.
+                I co-founded the project in 2016 and left in April 2019. At first I was doing most of the backend, then ended up leading the front-end after two year.
                 Bloc Solutions is a real estate management app where owner can manage their buildings, units and leases, the main feature being the electronic lease signature between a owner and a renter. 
               </div>
             </p>
@@ -24,7 +24,7 @@
               <div class="p-info">
                 <span class="p-info__row" :class="{ '-small' : $vuetify.breakpoint.mdAndUp }">
                   <v-icon medium style="padding-right:1rem;">mdi-calendar</v-icon>
-                  <h4 style="fpadding-right:1rem; line-height:2rem;"> Project Dates </h4>
+                  <h4 style="padding-right:1rem; line-height:2rem;"> Project Dates </h4>
                   <span style="line-height:2rem;" class="text--secondary"> 2016, 2019 </span>
                 </span>
 
@@ -61,8 +61,8 @@
             <p>
               <h2> Project details </h2>
               <div class="text--secondary" style="padding-left:0.5rem; text-align:justify;" :style="{paddingRight : $vuetify.breakpoint.mdAndUp ? '7rem' : '0.5rem' }"> 
-                Their landing page dated from 2016 and was a total mess, it took over 20 seconds to load and there was tons of css classes on every elements. 
-                I rebuilt their landing page from the ground up with Vue and hand written scss for them to be able to maintain the site in the future.
+                Their landing page dated from 2016 and was a total mess with long loading. 
+                I rebuilt it from the ground up with Vue and hand written sass ( bem ) for them to be able to maintain the site in the future.
               </div>
             </p>
 
@@ -100,7 +100,7 @@
           <div style="padding-left:1rem;">
             <p>
               <h1> Crypto Local </h1>
-              <h4 class="text--secondary"> Full stack developer & owner  </h4>
+              <h4 class="text--secondary"> Full stack developer  </h4>
             </p>
 
             <p>

@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-layout row wrap align-content-space-between>
-        <v-flex md7 xs12>
+        <v-flex lg7 md12 xs12>
           <v-flex
             text-sm-left >
             <h1> What can I do for you? </h1>
@@ -12,7 +12,9 @@
                     <div>A website</div>
                   </template>
                   <v-card>
-                    <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-card-text>
+                    <v-card-text>
+
+                    </v-card-text>
                   </v-card>
                 </v-expansion-panel-content>
               </v-expansion-panel>
@@ -23,7 +25,22 @@
                     <div>An application</div>
                   </template>
                   <v-card>
-                    <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-card-text>
+                    <v-card-text>
+
+                    </v-card-text>
+                  </v-card>
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+
+              <v-expansion-panel>
+                <v-expansion-panel-content>
+                  <template v-slot:header>
+                    <div>Optimisation</div>
+                  </template>
+                  <v-card>
+                    <v-card-text>
+
+                    </v-card-text>
                   </v-card>
                 </v-expansion-panel-content>
               </v-expansion-panel>
@@ -34,7 +51,9 @@
                     <div>But there's things I can't do</div>
                   </template>
                   <v-card>
-                    <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-card-text>
+                    <v-card-text>
+                      
+                    </v-card-text>
                   </v-card>
                 </v-expansion-panel-content>
               </v-expansion-panel>
