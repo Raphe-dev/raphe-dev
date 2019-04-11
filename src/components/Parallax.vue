@@ -2,7 +2,6 @@
   <v-parallax
     class="elevation-5" 
     :src="imgurl"
-    height="800"
   >
     <v-layout align-end justify-end column fill-height pa-0>
       <div class="text-xs-right pa-5" align-end>

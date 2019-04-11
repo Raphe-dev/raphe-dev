@@ -6,7 +6,38 @@
             text-sm-left >
             <h1> What can I do for you? </h1>
             <p class="text--secondary">
-              Cras eu efficitur lorem, non ullamcorper ligula. Aliquam erat volutpat. In hac habitasse platea dictumst. Sed neque quam, rutrum non consequat at, vulputate vitae augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut nec augue interdum, rutrum nulla bibendum, ullamcorper ligula. 
+              <v-expansion-panel>
+                <v-expansion-panel-content>
+                  <template v-slot:header>
+                    <div>A website</div>
+                  </template>
+                  <v-card>
+                    <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-card-text>
+                  </v-card>
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+
+              <v-expansion-panel>
+                <v-expansion-panel-content>
+                  <template v-slot:header>
+                    <div>An application</div>
+                  </template>
+                  <v-card>
+                    <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-card-text>
+                  </v-card>
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+
+              <v-expansion-panel>
+                <v-expansion-panel-content>
+                  <template v-slot:header>
+                    <div>But there's things I can't do</div>
+                  </template>
+                  <v-card>
+                    <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-card-text>
+                  </v-card>
+                </v-expansion-panel-content>
+              </v-expansion-panel>
             </p>
           </v-flex>
         </v-flex>

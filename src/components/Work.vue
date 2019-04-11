@@ -4,7 +4,7 @@
     </br>
     <v-carousel :cycle="false" hide-controls>
       <v-carousel-item>
-        <v-flex style="display:flex; justify-content:space-between;">
+        <v-flex style="display:flex; justify-content:space-between; height:100%;">
           <div style="padding-left:1rem;">
             <p>
               <h1> Bloc Solutions </h1>
@@ -13,28 +13,31 @@
 
             <p>
               <h2> Project details </h2>
-              <div class="text--secondary" style="padding-right:7rem; padding-left:0.5rem; text-align:justify;"> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ac felis quis tortor malesuada pretium. Phasellus dolor. Fusce fermentum odio nec arcu. Integer tincidunt. </div>
+              <div class="text--secondary" style="padding-left:0.5rem; text-align:justify;" :style="{paddingRight : $vuetify.breakpoint.mdAndUp ? '7rem' : '0.5rem' }"> 
+                I co-founded the project in 2016 and left in April 2019. At first I was doing most of the backend, then ended up leading the front-end after a year.
+                Bloc Solutions is a real estate management app where owner can manage their buildings, units and leases, the main feature being the electronic lease signature between a owner and a renter. 
+              </div>
             </p>
 
             <p> 
               <h2> Project info </h2>
               <div class="p-info">
                 <span class="p-info__row" :class="{ '-small' : $vuetify.breakpoint.mdAndUp }">
-                  <v-icon medium style="flex:1;">mdi-calendar</v-icon>
-                  <h4 style="flex:2; line-height:2rem;"> Project Dates </h4>
-                  <span style="flex:2; line-height:2rem;" class="text--secondary"> 2016, 2019 </span>
+                  <v-icon medium style="padding-right:1rem;">mdi-calendar</v-icon>
+                  <h4 style="fpadding-right:1rem; line-height:2rem;"> Project Dates </h4>
+                  <span style="line-height:2rem;" class="text--secondary"> 2016, 2019 </span>
                 </span>
 
                 <span class="p-info__row" :class="{ '-small' : $vuetify.breakpoint.mdAndUp }">
-                  <v-icon style="flex:1;" medium>mdi-web</v-icon>
-                  <h4 style="flex:2; line-height:2rem;"> Project Website </h4>
-                  <span  style="flex:2; line-height:2rem;" class="text--secondary"> <a href="https://bloc.solutions" target="_blank" class="text--secondary"> bloc.solutions</a> </span>
+                  <v-icon style="padding-right:1rem;" medium>mdi-web</v-icon>
+                  <h4 style="padding-right:1rem; line-height:2rem;"> Project Website </h4>
+                  <span  style="line-height:2rem;" class="text--secondary"> <a href="https://bloc.solutions" target="_blank" class="text--secondary"> bloc.solutions</a> </span>
                 </span>
 
                  <span class="p-info__row" :class="{ '-small' : $vuetify.breakpoint.mdAndUp }">
-                  <v-icon style="flex:1;" medium>mdi-settings</v-icon>
-                  <h4 style="flex:2; line-height:2rem;"> Project Stack </h4>
-                  <span style="flex:2; line-height:2rem;" class="text--secondary"> Laravel, Vue, Nuxt </span>
+                  <v-icon style="padding-right:1rem;" medium>mdi-settings</v-icon>
+                  <h4 style="padding-right:1rem; line-height:2rem;"> Project Stack </h4>
+                  <span style="line-height:2rem;" class="text--secondary"> Laravel, Vue, Nuxt </span>
                 </span>
               </div>
             </p>
@@ -47,8 +50,53 @@
         </v-flex>
       </v-carousel-item>
 
+      <v-carousel-item>
+        <v-flex style="display:flex; justify-content:space-between; height:100%;">
+          <div style="padding-left:1rem;">
+            <p>
+              <h1> Kazionline </h1>
+              <h4 class="text--secondary"> Freelancer </h4>
+            </p>
+
+            <p>
+              <h2> Project details </h2>
+              <div class="text--secondary" style="padding-left:0.5rem; text-align:justify;" :style="{paddingRight : $vuetify.breakpoint.mdAndUp ? '7rem' : '0.5rem' }"> 
+                Their landing page dated from 2016 and was a total mess, it took over 20 seconds to load and there was tons of css classes on every elements. 
+                I rebuilt their landing page from the ground up with Vue and hand written scss for them to be able to maintain the site in the future.
+              </div>
+            </p>
+
+            <p> 
+              <h2> Project info </h2>
+              <div class="p-info">
+                <span style="display:flex; flex-direction:row; ">
+                  <v-icon medium style="padding-right:1rem;">mdi-calendar</v-icon>
+                  <h4 style="padding-right:1rem; line-height:2rem;"> Project Dates </h4>
+                  <span style="line-height:2rem;" class="text--secondary"> 2019 </span>
+                </span>
+
+                <span style="display:flex; flex-direction:row; padding-top:1rem;">
+                  <v-icon style="padding-right:1rem;" medium>mdi-web</v-icon>
+                  <h4 style="padding-right:1rem; line-height:2rem;"> Project Website </h4>
+                  <span  style="line-height:2rem;" class="text--secondary"> <a href="https://gallant-galileo-e1be4e.netlify.com" target="_blank" class="text--secondary"> link </a> </span>
+                </span>
+
+                 <span style="display:flex; flex-direction:row; padding-top:1rem;">
+                  <v-icon style="padding-right:1rem;" medium>mdi-settings</v-icon>
+                  <h4 style="padding-right:1rem; line-height:2rem;"> Project Stack </h4>
+                  <span style="line-height:2rem;" class="text--secondary"> Vue, Sass </span>
+                </span>
+              </div>
+            </p>
+          </div>
+          <div v-if="$vuetify.breakpoint.lgAndUp">
+            <img src="../../public/KaziOnline.png" style="max-width:40rem; max-height:36rem;"/>
+          </div>
+        </v-flex>
+      </v-carousel-item>
+
        <v-carousel-item>
-        <v-flex style="display:flex; justify-content:space-between;">
+        <v-flex style="display:flex; justify-content:space-between; height:100%;">
           <div style="padding-left:1rem;">
             <p>
               <h1> Crypto Local </h1>
@@ -57,48 +105,40 @@
 
             <p>
               <h2> Project details </h2>
-              <div class="text--secondary" style="padding-right:7rem; padding-left:0.5rem; text-align:justify;"> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ac felis quis tortor malesuada pretium. Phasellus dolor. Fusce fermentum odio nec arcu. Integer tincidunt. </div>
+              <div class="text--secondary" style="padding-left:0.5rem; text-align:justify;"  :style="{paddingRight : $vuetify.breakpoint.mdAndUp ? '7rem' : '0.5rem' }"> 
+                A complete wrapper for Binance.com with: buy & sell, account overview, position management, auto-sell on goal or stop-loss.
+                Behind the scene there is also a bot scraping signal data from twitter and other trade signal provider, the bot can auto buy and sell depending on the settings.
+              </div>
             </p>
 
             <p> 
               <h2> Project info </h2>
-              <div style="padding-top:1rem; display:flex; flex-direction:column; align-content:flex-start">
-                <span style="display:flex; flex-direction:row; ">
-                  <v-icon medium style="flex:1;">mdi-calendar</v-icon>
-                  <h4 style="flex:2; line-height:2rem;"> Project Dates </h4>
-                  <span style="flex:2; line-height:2rem;" class="text--secondary"> 2018, 2019 </span>
+              <div class="p-info">
+                <span style="display:flex; flex-direction:row; justify-content:flex-start">
+                  <v-icon medium style="padding-right:1rem;">mdi-calendar</v-icon>
+                  <h4 style="padding-right:1rem; line-height:2rem;"> Project Dates </h4>
+                  <span style="line-height:2rem;" class="text--secondary"> 2018, 2019 </span>
                 </span>
 
-                <span style="display:flex; flex-direction:row; padding-top:1rem;">
-                  <v-icon style="flex:1;" medium>mdi-web</v-icon>
-                  <h4 style="flex:2; line-height:2rem;"> Project Website </h4>
-                  <span  style="flex:2; line-height:2rem;" class="text--secondary"> <a href="" target="_blank" class="text--secondary"> link </a> </span>
+                <span style="display:flex; flex-direction:row; padding-top:1rem; justify-content:flex-start">
+                  <v-icon style="padding-right:1rem;" medium>mdi-web</v-icon>
+                  <h4 style="padding-right:1rem; line-height:2rem;"> Project Website </h4>
+                  <span  style="line-height:2rem;" class="text--secondary">Runs locally</span>
                 </span>
 
-                 <span style="display:flex; flex-direction:row; padding-top:1rem;">
-                  <v-icon style="flex:1;" medium>mdi-settings</v-icon>
-                  <h4 style="flex:2; line-height:2rem;"> Project Stack </h4>
-                  <span style="flex:2; line-height:2rem;" class="text--secondary"> Vue, Express </span>
+                 <span style="display:flex; flex-direction:row; padding-top:1rem; justify-content:flex-start">
+                  <v-icon style="padding-right:1rem;" medium>mdi-settings</v-icon>
+                  <h4 style="padding-right:1rem; line-height:2rem;"> Project Stack </h4>
+                  <span style="line-height:2rem;" class="text--secondary"> Vue, Express </span>
                 </span>
               </div>
             </p>
           </div>
-          <div v-if="$vuetify.breakpoint.lgAndUp">
-            <img src="https://scontent.fymy1-2.fna.fbcdn.net/v/t1.15752-9/42643597_304905553443098_4900981121266745344_n.png?_nc_cat=110&_nc_ht=scontent.fymy1-2.fna&oh=0e57a64a83c0e355c40df06fc219fa63&oe=5D3CB7BD" style="max-width:40rem; max-height:37rem;">
-            </img>
-          </div>
-          <div v-if="$vuetify.breakpoint.mdOnly">
-            <img src="https://scontent.fymy1-2.fna.fbcdn.net/v/t1.15752-9/42643597_304905553443098_4900981121266745344_n.png?_nc_cat=110&_nc_ht=scontent.fymy1-2.fna&oh=0e57a64a83c0e355c40df06fc219fa63&oe=5D3CB7BD" style="max-width:20rem;">
-            </img>
-          </div>
-          <div v-if="$vuetify.breakpoint.smOnly">
-            <img src="https://scontent.fymy1-2.fna.fbcdn.net/v/t1.15752-9/42643597_304905553443098_4900981121266745344_n.png?_nc_cat=110&_nc_ht=scontent.fymy1-2.fna&oh=0e57a64a83c0e355c40df06fc219fa63&oe=5D3CB7BD" style="max-width:15rem;">
+          <div v-if="$vuetify.breakpoint.lgAndUp" style="display:flex; align-items:center; height:100%;">
+            <img  src="https://scontent.fymy1-2.fna.fbcdn.net/v/t1.15752-9/42643597_304905553443098_4900981121266745344_n.png?_nc_cat=110&_nc_ht=scontent.fymy1-2.fna&oh=0e57a64a83c0e355c40df06fc219fa63&oe=5D3CB7BD" style="max-width:40rem; max-height:37rem;">
             </img>
           </div>
         </v-flex>
-      </v-carousel-item>
-
-      <v-carousel-item>
       </v-carousel-item>
     </v-carousel>
   </v-container>
@@ -115,10 +155,11 @@
 
 <style lang="scss">
 .p-info {
-  padding-top:1rem; 
+  padding-top:1rem;
   display:flex; 
   flex-direction:column; 
   align-content:flex-start;
+  padding-left:0.7rem;
 
   &__row {
     display:flex; 
