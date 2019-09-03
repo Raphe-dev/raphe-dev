@@ -29,9 +29,6 @@
 
 <script>
   export default {
-    name: 'me',
-    data: () => ({
-      
-    })
+    name: 'me'
   }
 </script>

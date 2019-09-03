@@ -6,53 +6,14 @@
             text-sm-left >
             <h1> What can I do for you? </h1>
             <p class="text--secondary">
-              <v-expansion-panel>
+              <v-expansion-panel v-for="(item, key) in data" :key="key">
                 <v-expansion-panel-content>
                   <template v-slot:header>
-                    <div>A website</div>
+                    <div>{{item.title}}</div>
                   </template>
                   <v-card>
                     <v-card-text>
-
-                    </v-card-text>
-                  </v-card>
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-
-              <v-expansion-panel>
-                <v-expansion-panel-content>
-                  <template v-slot:header>
-                    <div>An application</div>
-                  </template>
-                  <v-card>
-                    <v-card-text>
-
-                    </v-card-text>
-                  </v-card>
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-
-              <v-expansion-panel>
-                <v-expansion-panel-content>
-                  <template v-slot:header>
-                    <div>Optimisation</div>
-                  </template>
-                  <v-card>
-                    <v-card-text>
-
-                    </v-card-text>
-                  </v-card>
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-
-              <v-expansion-panel>
-                <v-expansion-panel-content>
-                  <template v-slot:header>
-                    <div>But there's things I can't do</div>
-                  </template>
-                  <v-card>
-                    <v-card-text>
-                      
+                      {{item.text}}
                     </v-card-text>
                   </v-card>
                 </v-expansion-panel-content>
@@ -68,7 +29,12 @@
   export default {
     name: 'can-do',
     data: () => ({
-      
+      data: [
+        {title: 'A website', text: ''},
+        {title: 'An application', text: ''},
+        {title: 'Optimisation', text: ''},
+        {title: 'Make your dream come true', text: ''}
+      ]
     })
   }
 </script>
