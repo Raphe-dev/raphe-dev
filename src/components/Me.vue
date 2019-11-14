@@ -6,7 +6,16 @@
           text-sm-left >
           <h1> Who am I? </h1>
           <p class="text--secondary">
-            Cras eu efficitur lorem, non ullamcorper ligula. Aliquam erat volutpat. In hac habitasse platea dictumst. Sed neque quam, rutrum non consequat at, vulputate vitae augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut nec augue interdum, rutrum nulla bibendum, ullamcorper ligula. 
+            <p>
+              I am a young full-stack developper with 4 years of experience, 
+              I try to keep up with the most recent technologies and frameworks as much as possible.
+              I love prototyping in my spare time to try things out and understand how they works.
+            </p>
+            <p>
+              I fell in love with Javascript a few years back and love it more with every new feature, I mainly use the wonderfull Vue.js framwework
+              to build the front end of websites, web apps and even native mobile app. 
+              For the servers I mostly use Node.js with express.js as it is very polyvalent, fast and flexible.
+            </p>
           </p>
         </v-flex>
       </v-flex>

@@ -37,9 +37,9 @@
     name:'skills',
     data: () => ({
       skills: {
-        'Front-end': {'Javascript' : 5, 'Node.js' : 5, 'Vue' : 6, 'Css & Sass' : 4},
-        'Back-end': {'Node.js' : 4, 'PHP' : 3, 'SQL/NoSQL' : 4, '.NET' : 1},
-        'Hobby': {'Optimisation' : 4, 'Mobile' : 3, 'Game dev' : 2, 'Blockchain' : 1},
+        'Front-end': {'Vue' : 6, 'Javascript' : 5, 'Node.js' : 5,  'Css & Sass' : 4},
+        'Back-end': {'Node.js' : 5, 'Socket.io' : 5, 'SQL/NoSQL' : 4, 'PHP' : 3},
+        'Hobby': {'Gardening': 6, 'Gaming' : 4, 'Game dev' : 3,  'Blockchain' : 1},
       }
     })
   }
