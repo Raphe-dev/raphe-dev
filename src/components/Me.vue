@@ -2,10 +2,9 @@
   <v-container fluid>
     <v-layout row wrap align-content-space-between>
       <v-flex md7 xs12>
-        <v-flex
-          text-sm-left >
+        <v-flex >
           <h1> Who am I? </h1>
-          <p class="text--secondary">
+          <div class="text--secondary" style="text-align:justify">
             <p>
               I am a young full-stack developper with 4 years of experience, 
               I try to keep up with the most recent technologies and frameworks as much as possible.
@@ -16,7 +15,7 @@
               to build the front end of websites, web apps and even native mobile app. 
               For the servers I mostly use Node.js with express.js as it is very polyvalent, fast and flexible.
             </p>
-          </p>
+          </div>
         </v-flex>
       </v-flex>
         

@@ -1,25 +1,22 @@
 <template>
   <v-container fluid>
-    <v-layout row wrap align-content-space-between>
-        <v-flex lg7 md12 xs12>
-          <v-flex
-            text-sm-left >
-            <h1> What can I do for you? </h1>
-            <p class="text--secondary">
-              <v-expansion-panel v-for="(item, key) in data" :key="key">
-                <v-expansion-panel-content>
-                  <template v-slot:header>
-                    <div>{{item.title}}</div>
-                  </template>
-                  <v-card>
-                    <v-card-text>
-                      {{item.text}}
-                    </v-card-text>
-                  </v-card>
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-            </p>
-          </v-flex>
+    <v-layout row wrap >
+        <v-flex lg7 md12 xs12 >
+          <h1> What can I do for you? </h1>
+          <p>
+            <v-expansion-panel v-for="(item, key) in data" :key="key">
+              <v-expansion-panel-content>
+                <template v-slot:header>
+                  <div>{{item.title}}</div>
+                </template>
+                <v-card>
+                  <v-card-text class="text--secondary " style="text-align:justify">
+                    {{item.text}}
+                  </v-card-text>
+                </v-card>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </p>
         </v-flex>
     </v-layout>
   </v-container>
@@ -37,10 +34,10 @@
           text: "You have that revolutionary web-app idea but are not an experienced developer? I am there to make it real! With node.js and vue.js it'll be fast, seamless and responsive to all type of screens."
         },
         {title: 'A mobile application', 
-          text: "You need an android or ios app built or maybe already have a web-app but would like it run natively on mobile devices? With the help of vue-native I can build the app of your dream with truely native performance and the same clean architecture"
+          text: "You need an android or ios app built or maybe already have a web-app but would like it run natively on mobile devices? With the help of vue-native I can build the app of your dream with truely native performance and the same clean architecture."
         },
         {title: 'Optimisation', 
-          text: "Maybe your website take a lot of time to load Or maybe it is not as fluid as it should be. Maybe you don't get ranked in google where you should or dont get the social media sharing preview you would like. It can be a lot of things that makes you unhappy about your website I'll be glad to take a look and recommand you with some better practices or take a deeper look and fix as much as possible"
+          text: "Maybe your website take a lot of time to load Or maybe it is not as fluid as it should be. Maybe you don't get ranked in google where you should or dont get the social media sharing preview you would like. It can be a lot of things that makes you unhappy about your website I'll be glad to take a look and recommand you with some better practices or take a deeper look and fix as much as possible."
         }
       ]
     })

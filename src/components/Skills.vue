@@ -3,13 +3,12 @@
     <v-layout row wrap>
       <v-flex>
         <h1> Skills </h1>
-        </br>
-        <v-layout class="d-flex flex-row justify-space-around" style="flex-wrap:wrap">
+        <v-layout style="flex-wrap:wrap">
           <v-card v-for="(skill, key) in skills" :key="key" elevation-1 style="margin:1rem; flex-grow:1; min-width:300px; max-width:450px;">
-            <div class="pa-2"/>
-            <h3 class="headline text-sm-center"> {{key}} </h3>
+            <div/>
+            <h3 class="pa-1 headline text-sm-center"> {{key}} </h3>
             <v-layout xs12 md6 row class="pt-2">
-              <v-flex xs4 class="pt-1 pl-2">
+              <v-flex xs4 class="p-1 pl-3">
                 <p v-for="(item, key) in skill" :key="key" class="text--secondary text-uppercase"> {{key}} </p>
               </v-flex>
               <v-flex xs8 style="justify-content:space-between;">
