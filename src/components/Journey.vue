@@ -5,7 +5,7 @@
         text-sm-left >
         <h1> My journey </h1>
       </v-flex>
-      <v-timeline>
+      <v-timeline :dense="$vuetify.breakpoint.smAndDown">
         <v-timeline-item
           v-for="(year, i) in years"
           :key="i"
