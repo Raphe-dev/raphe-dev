@@ -36,7 +36,7 @@
     data: () => ({
       years: [
         {
-          color: 'blue',
+          color: '',
           year: '2019',
           icon: 'mdi-map-marker',
           title: 'Now we\'re here',
@@ -71,21 +71,21 @@
           text: 'Being older and in a computer science oriented program at school, I discovered LeSiteDuZero which is now Open Classroom. There I started by going through the most popular html/css tutorials then got closer to the machine by learning the base of C then C++, Python and Java. I was staying away of web technologie at the time as coding webpages was a nightmare.'
         },
         {
-          color: 'yellow',
+          color: 'deep-orange',
           year: '2001',
-          icon: 'mdi-monitor',
+          icon: 'mdi-web',
           title: 'Web development summercamp',
           text: "My parents really wanted me to go to summercamp at the time and I didn't! Then, I saw that there was a web development program where we could learn basic html css and a little bit of php, that was my first real programming experience!"
         },
         {
-          color: 'amber',
+          color: 'orange',
           year: '1997',
           icon: 'mdi-monitor',
           title: 'My first computer',
           text: 'Got in touch with DOS, what a time to be alive.'
         },
         {
-          color: 'orange',
+          color: 'amber',
           year: '1993 ',
           icon: 'mdi-baby',
           title: 'I was born',
