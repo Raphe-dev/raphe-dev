@@ -27,13 +27,13 @@
     name: 'can-do',
     data: () => ({
       data: [
-        {title: 'A website', 
+        {title: 'Website', 
           text: "So you need a website built for your new busniess? Or maybe you already have one but it is so messy you can't change anything. I can fix that for you! You'll get a fast and clean website with handwritten sass code following the BEM naming convention (Or a library if you want to), component based architecture so you can easily navigate and modify the source code without a headache."
         },
-        {title: 'A web-app', 
+        {title: 'Web-app', 
           text: "You have that revolutionary web-app idea but are not an experienced developer? I am there to make it real! With node.js and vue.js it'll be fast, seamless and responsive to all type of screens."
         },
-        {title: 'A mobile application', 
+        {title: 'Mobile application', 
           text: "You need an android or ios app built or maybe already have a web-app but would like it run natively on mobile devices? With the help of vue-native I can build the app of your dream with truely native performance and the same clean architecture."
         },
         {title: 'Optimisation', 
