@@ -6,7 +6,7 @@
           <h1> Who am I? </h1>
           <div class="text--secondary" style="text-align:justify">
             <p>
-              I am a young full-stack developper with 4 years of experience, 
+              I am a young full-stack developper with 3 years of experience, 
               I try to keep up with the most recent technologies and frameworks as much as possible.
               I love prototyping in my spare time to try things out and understand how they works.
             </p>
@@ -26,7 +26,7 @@
           <p class="text--secondary text-uppercase text-sm-left"> Phone </p>
         </v-flex>
         <v-flex xs6>
-          <p class="text--secondary  text-sm-left"> Canada </p>
+          <p class="text--secondary  text-sm-left"> Québec Canada </p>
           <p class="text--secondary  text-sm-left"> admin@raphe.dev </p>
           <p class="text--secondary  text-sm-left"> (418) 933 2699 </p>
         </v-flex>

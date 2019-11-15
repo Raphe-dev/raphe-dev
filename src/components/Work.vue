@@ -43,7 +43,7 @@
             </p>
           </div>
           <div v-if="$vuetify.breakpoint.lgAndUp">
-            <img src="http://bloc.solutions/images/FbLogo.png" style="max-width:40rem; max-height:37rem;">
+            <img src="https://bloc.solutions/images/FbLogo.png" style="max-width:40rem; max-height:37rem;">
             </img>
           </div>
 
